@@ -120,23 +120,6 @@ const handleSubmit = async (e: React.FormEvent) => {
     }
   }
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: 'UAF CGPA Calculator',
-    description: 'Calculate your CGPA for University of Agriculture Faisalabad (UAF) with our easy-to-use calculator.',
-    applicationCategory: 'EducationalApplication',
-    operatingSystem: 'Any',
-    author: {
-      '@type': 'Organization',
-      name: 'UAF CGPA Calculator',
-    },
-    audience: {
-      '@type': 'EducationalAudience',
-      educationalRole: 'student'
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 text-gray-700 dark:text-gray-300">
