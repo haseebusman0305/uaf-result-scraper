@@ -13,10 +13,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "UAF CGPA Calculator | Calculate Your University GPA Easily",
+    default: "UAF CGPA Calculator | Calculate Your UAF GPA/CGPA Easily",
     template: "%s | UAF CGPA Calculator"
   },
-  description: "CGPA Calculator for University of Agriculture Faisalabad (UAF) students. Calculate UAF semester GPA and CGPA instantly. Trusted by UAF students across all departments and programs.",
+  description: "CGPA/GPA Calculator for UAF students. Calculate and Download Result Instantly. Trusted by UAF students across all departments and programs.",
   keywords: keywords,
   icons: {
     icon: '/icon.png'
@@ -42,6 +42,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={poppins.className}>
         <ClientLayout>
           <div className="relative flex min-h-screen flex-col">
